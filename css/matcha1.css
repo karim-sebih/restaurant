@@ -1,0 +1,639 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-family: "kodchasan";
+}
+
+body {
+    background-image: url(../images/body-bg1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: auto;
+    font-family: "kodchasan";
+}
+
+/* Nav bar */
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: rgb(0, 0, 0);
+}
+
+header {
+    position: relative;
+    padding: 0 2rem;
+    background-color: green;
+}
+
+.navbar {
+    width: 100%;
+    max-width: 1200px;
+    height: 60px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.navbar .logo img {
+    min-width: 60%;
+    height: 60px;
+    object-fit: cover;
+}
+
+
+@media (max-width:599px) {
+    .navbar .logo img {
+        height: 40px;
+    }
+}
+
+@media (max-width:320px) {
+    .navbar .logo img {
+        height: 30px;
+    }
+}
+
+.navbar .links {
+    display: flex;
+    gap: 2rem;
+}
+
+
+.navbar .burger-menu-button {
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+
+.buttons {
+    display: flex;
+    gap: 30px;
+}
+
+
+/*burger-menu*/
+
+.burger-menu {
+    display: none;
+    height: 0;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    width: 200px;
+    background: rgba(0, 0, 0, 0.906);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+
+
+.burger-menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.divider {
+    height: 1px;
+    background-color: #fff;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+}
+
+.buttons-burger-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+
+/* -------Responsive navbar-------*/
+
+@media (max-width: 990px) {
+
+
+    .navbar .links,
+    .navbar .buttons {
+        display: none;
+    }
+
+    .navbar .burger-menu-button {
+        display: block;
+    }
+
+    .burger-menu {
+        display: block;
+
+    }
+
+    .burger-menu.open {
+        height: 270px;
+    }
+
+}
+
+
+@media (max-width: 599px) {
+
+
+
+    .burger-menu {
+        left: 2rem;
+        width: unset;
+
+    }
+
+}
+
+/*----Fien media queries nav bar*/
+
+.box {
+    height: 30px;
+    display: flex;
+    cursor: pointer;
+    padding: 5px 20px;
+    border-radius: 30px;
+    align-items: center;
+}
+
+
+.box:hover input {
+    width: 200px;
+    background: #fff;
+    border-radius: 30px;
+    height: 30px;
+}
+
+@media (max-width:599px) {
+    .box:hover input {
+        width: 100px;
+    }
+}
+
+@media (max-width:400px) {
+    .box:hover input {
+        width: 90px;
+    }
+}
+
+@media (max-width:325px) {
+    .box:hover input {
+        width: 72px;
+    }
+}
+
+
+.box input {
+    width: 0;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    transition: 0.8s;
+    background: transparent;
+    padding-left: 10px;
+}
+
+.box a .fa {
+    color: #4D7F27;
+    font-size: 18px;
+}
+
+
+
+
+
+/* Jorge */
+
+
+.text-container {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 0rem;
+    max-width: 1200px;
+    margin: 8%;
+    margin-bottom: -3%;
+    margin-top: 3%;
+
+    @media screen and (min-width:430px) and (max-width:932px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+}
+
+
+.title {
+    font-family: "Kodchasan", serif;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: none;
+    color: #256100;
+    margin: 0%;
+    margin-left: -1%;
+}
+
+
+.name {
+    font-family: "Kodchasan", serif;
+    font-size: 5rem;
+    font-weight: bold;
+    padding: none;
+    margin: -2%;
+    color: #256100;
+
+    @media screen and (min-width:430px) and (max-width:932px) {
+        font-size: 3rem;
+    }
+}
+
+
+.slogan {
+    font-family: "Kodchasan", serif;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: none;
+    margin: 0%;
+    color: #88BF4B;
+    margin-left: 16%;
+
+    @media screen and (min-width:430px) and (max-width:932px) {
+        font-size: 14px;
+        margin-left: 0%;
+    }
+}
+
+
+.container2 {
+    font-family: "Kodchasan", serif;
+    font-size: 1rem;
+    font-weight: none;
+    padding: none;
+    color: #256100;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    gap: 40px;
+    margin: 7% 10% 0% 10%;
+    border-radius: 30px;
+    background: #ffffff;
+    box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+
+    @media screen and (min-width:430px) and (max-width:932px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 15px;
+    }
+}
+
+.description {
+    margin: 5% 3% 5% 3%;
+
+}
+
+.container2 img {
+    width: 38%;
+    border-radius: 8px;
+    object-fit: contain;
+    border-radius: 30px;
+    background: #ffffff;
+    box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+
+    @media screen and (min-width:430px) and (max-width:932px) {
+        width: 90%;
+        border-radius: 10px;
+        margin-bottom: 5%;
+    }
+}
+
+.equipe h3 {
+    font-family: "Kodchasan", serif;
+    font-size: 1.5rem;
+    font-weight: none;
+    padding: none;
+    color: #256100;
+    text-align: center;
+    padding: 5%;
+
+    @media screen and (min-width:430px) and (max-width:932px) {
+        font-size: 1rem;
+        padding: 5%;
+    }
+}
+
+
+.display-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    gap: 1%;
+
+    @media screen and (min-width:430px) and (max-width:932px) {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.display-container img {
+    width: 25%;
+    height: 25%;
+    padding: 1%;
+    object-fit: cover;
+    border-radius: 20px;
+    border-radius: 30px;
+    background: #ffffff;
+    box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+
+    @media screen and (min-width:430px) and (max-width:932px) {
+        width: 90%;
+        height: 90%;
+        border-radius: 15px;
+        margin-left: 6%;
+
+    }
+}
+
+.photo-barista img {
+    width: 50%;
+    height: 50%;
+    border-radius: 10px;
+    padding: 1%;
+    border-radius: 20px;
+    background: #ffffff;
+    box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+
+    @media screen and (min-width:430px) and (max-width:932px) {
+        width: 80%;
+        height: 80%;
+    }
+}
+
+.photo-barista {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3%;
+}
+
+.container-description {
+    font-family: "Kodchasan", serif;
+    font-size: 1rem;
+    font-weight: none;
+    padding: none;
+    color: #256100;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    gap: 40px;
+    margin: 7% 10% 0% 10%;
+    border-radius: 30px;
+    background: #ffffff;
+    box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+
+    @media screen and (min-width:430px) and (max-width:932px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 15px;
+        border-radius: 20px;
+    }
+}
+
+.container-description img {
+    width: 50%;
+    border-radius: 10px;
+    object-fit: fill;
+
+    @media screen and (min-width:430px) and (max-width:932px) {
+        width: 90%;
+        border-radius: 10px;
+        margin-bottom: 5%;
+    }
+}
+
+.container-description2 {
+    font-family: "Kodchasan", serif;
+    font-size: 1rem;
+    font-weight: none;
+    padding: none;
+    color: #256100;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    gap: 40px;
+    margin: 7% 10% 0% 10%;
+    border-radius: 30px;
+    background: #ffffff;
+    box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+
+    @media screen and (min-width:430px) and (max-width:932px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+        padding: 15px;
+        border-radius: 20px;
+    }
+
+}
+
+.container-description2 img {
+    width: 50%;
+    border-radius: 8px;
+    object-fit: fill;
+
+    @media screen and (min-width:430px) and (max-width:932px) {
+        width: 90%;
+        border-radius: 10px;
+        margin-bottom: 5%;
+    }
+}
+
+.container4 {
+    font-family: "Kodchasan", serif;
+    font-size: 2rem;
+    font-weight: none;
+    padding: none;
+    color: #256100;
+    text-align: center;
+    margin-top: 10%;
+
+    @media screen and (min-width:430px) and (max-width:932px) {
+        font-size: 1rem;
+    }
+}
+
+.liste-title {
+    font-family: "Kodchasan", serif;
+    font-size: 1rem;
+    font-weight: none;
+    padding: 2%;
+    color: #256100;
+    text-align: center;
+}
+
+.liste {
+    font-family: "Kodchasan", serif;
+    font-size: 1rem;
+
+    font-weight: none;
+    padding-bottom: 10%;
+    color: #256100;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+
+footer {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+footer {
+    background-color: #111;
+}
+
+.footerContainer {
+    width: 100%;
+    padding: 20px 20px 1px;
+    background-color: #212529;
+}
+
+.socialIcons {
+    display: flex;
+    justify-content: center;
+
+}
+
+.socialIcons a {
+    text-decoration: none;
+    padding: 9px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.socialIcons a i {
+    font-size: 2em;
+    color: black;
+    opacity: 0, 9;
+}
+
+/* Hover affect on social media icon */
+.socialIcons a:hover {
+    background-color: #111;
+    transition: 0.5s;
+}
+
+.socialIcons a:hover i {
+    transition: 0.5s;
+}
+
+.footerNav {
+    margin: 30px 0;
+}
+
+.footerNav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.footerNav ul li a {
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+
+}
+
+.footerNav ul li a:hover {
+    opacity: 1;
+}
+
+.footerBottom {
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+
+.footerBottom p {
+    color: white;
+}
+
+
+.designer {
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
+@media (max-width:990px) {
+    .footerNav ul {
+        flex-direction: column;
+    }
+
+    .footerNav ul li {
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+
+
+    @media (max-width:599px) {
+        .footerNav ul {
+            flex-direction: column;
+        }
+
+        .footerNav ul li {
+            width: 100%;
+            text-align: center;
+            margin: 10px;
+        }
+    }
+}
