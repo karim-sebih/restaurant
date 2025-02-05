@@ -84,10 +84,11 @@
     </script>
     <main>
         <section class="Intro">
-            <h2>Produit de thé matcha</h2>
+            <h2>Pizza Country</h2>
             <br>
-            <h3>Plongez dans l'univers envoûtant du thé matcha, ce concentré d'émeraude aux mille vertus, qui allie
-                tradition millénaire et bienfaits modernes pour un rituel aussi délicieux que revitalisant.</h3>
+            <h3>otre pâte est faite maison étalée et roulée à la main.
+Chaque jour nous fabriquons sur place notre pâte et 24h de levage permette de lui assurer ses bords croustillants et sa légèreté.
+Nous travaillons de façon artisanale avec des ingrédients frais et de qualité, une sauce tomate cuisinée, cuite durant 3 heures, car chez pizza country, votre satisfaction est notre priorité!</h3>
             <br>
             <a href="./pages/ventes.php" class="action_btn">VOIR LES PRODUITS</a>
         </section>

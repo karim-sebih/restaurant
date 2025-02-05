@@ -1,5 +1,5 @@
 <?php
-include("../pages/config.php");
+include("../utils/config2.php");
 
 $filter = "";
 if (isset($_GET['filter_category']) && $_GET['filter_category'] !== "") {
