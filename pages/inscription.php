@@ -1,7 +1,7 @@
 <?php
 
 include("../utils/config.php");
-var_dump($pdo);
+
 $message = '';
 
 if (isset($_POST['username']) && isset($_POST['password']) && isset($_POST['email'])) {

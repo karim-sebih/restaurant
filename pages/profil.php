@@ -12,69 +12,72 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="../css/matcha3.css">
+        <link rel="stylesheet" href="../css/pc3.css">
     </head>
     <body>
         <!--Le header sera commun-->
         <header>
-          <div class="navbar">
-              <div class="logo"><a href=../acceuil.html>
-                      <img src="../images/matcha tea en blanc.png" alt="logo matcha tea">
-                  </a>
-              </div>
-              <ul class="links">
-                  <li><a href="ventes.html">Vente</a></li>
-                  <li><a href="l'histoire.html">Histoire</a></li>
-                  <li><a href="a_propos.html">À propos</a></li>
-                  <li><a href="contact.html">Contact</a></li>
-              </ul>
-              <div class="box">
-                  <a href="#">
-                      <input type="search" br placeholder="search...">
-                      <i class="fa-solid fa-magnifying-glass"></i>
-                  </a>
-              </div>
-              <div class="buttons">
-                  <a href="profil.html" class="action-button-user">
-                      <i class="fa-solid fa-user"></i>
-                  </a>
-                  <a href="commandes.html" class="action-button-shop">
-                      <i class="fa-solid fa-cart-shopping"></i>
-                  </a>
-              </div>
-              <div class="burger-menu-button">
-                  <i class="fa-solid fa-bars"></i>
-              </div>
-          </div>
-          <div class="burger-menu open">
-              <ul class="links">
-                  <li><a href="ventes.html">Vente</a></li>
-                  <li><a href="l'histoire.html">Histoire</a></li>
-                  <li><a href="a_propos.html">À propos</a></li>
-                  <li><a href="contact.html">Contact</a></li>
-                  <div class="divider"></div>
-                  <div class="buttons-burger-menu">
-                      <a href="profil.html" class="action-button-user">
-                          <i class="fa-solid fa-user"></i>
-                      </a>
-                      <a href="commandes.html" class="action-button-shop">
-                          <i class="fa-solid fa-cart-shopping"></i>
-                      </a>
-                  </div>
-              </ul>
-          </div>
-      </header>
-      <script>
-          const burgerMenuButton = document.querySelector('.burger-menu-button ')
-          const burgerMenuButtonIcon = document.querySelector('.burger-menu-button i')
-          const burgerMenu = document.querySelector('.burger-menu')
-  
-          burgerMenuButton.onclick = function(){
-              burgerMenu.classList.toggle('open')
-              const isOpen = burgerMenu.classList.contains('open')
-              burgerMenuButtonIcon.classList= isOpen ? 'fa-solid fa-x' :'fa-solid fa-bars' 
-          }
-          </script>
+        <div class="navbar">
+            <div class="logo">
+                <a href="../index.php">
+                    <img src="../images/pizza country logo.png" height= '100'alt="logo matcha tea" >
+                </a>
+            </div>
+            <ul class="links">
+                <li><a href="ventes.php">Vente</a></li>
+               
+                <li><a href="contact.php">Contact</a></li>
+            </ul>
+            <div class="box">
+                <a href="#">
+                    <input type="search" placeholder="search...">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+            </div>
+            <div class="buttons">
+                <a href="profil.php" class="action-button-user">
+                    <i class="fa-solid fa-user"></i>
+                </a>
+                <a href="commandes.php" class="action-button-shop">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+                <a href="co.php">Connexion</a>
+            </div>
+            <div class="burger-menu-button">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <div class="burger-menu open">
+            <ul class="links">
+                <li><a href="ventes.php">Vente</a></li>
+                
+                <li><a href="contact.php">Contact</a></li>
+                
+                <div class="divider"></div>
+                <div class="buttons-burger-menu">
+                    <a href="profil.php" class="action-button-user">
+                        <i class="fa-solid fa-user"></i>
+                    </a>
+                    <a href="commandes.php" class="action-button-shop">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+                    <a href="co.php">Connexion</a>
+                </div>
+            </ul>
+        </div>
+    </header>
+
+    <script>
+        const burgerMenuButton = document.querySelector('.burger-menu-button');
+        const burgerMenuButtonIcon = document.querySelector('.burger-menu-button i');
+        const burgerMenu = document.querySelector('.burger-menu');
+
+        burgerMenuButton.onclick = function () {
+            burgerMenu.classList.toggle('open');
+            const isOpen = burgerMenu.classList.contains('open');
+            burgerMenuButtonIcon.classList = isOpen ? 'fa-solid fa-x' : 'fa-solid fa-bars';
+        }
+    </script>
         <main>
           <section>
                 <h2 class="haut-de-page">Modifier vos informations personnelles</h2>
@@ -131,21 +134,18 @@
           <div class="footerContainer">
               <div class="footerNav">
                   <ul>
-                      <li><a href="../acceuil.html">Acceuil</a></li>
+                      <li><a href="../index.php">Acceuil</a></li>
   
-                      <li><a href="ventes.html">Vente</a></li>
+                      <li><a href="ventes.php">Vente</a></li>
   
-                      <li> <a href="l'histoire.html">Histoire </a></li>
-  
-                      <li><a href="a_propos.html">À propos</a></li>
-  
-                      <li><a href="contact.html">Contact</a></li>
+                      
+                      <li><a href="contact.php">Contact</a></li>
                   </ul>
               </div>
   
           </div>
           <div class="footerBottom">
-              <p>Copyright &copy;2025 ; Designed by<span class="designer">Karim Sebih, Jorge Santos, Raïs Mahjoub</span>
+              <p>Copyright &copy;2025 ; Designed by<span class="designer">Karim Sebih, Jorge Santos, Raïs Mahjoub, Mathis Robert</span>
               </p>
           </div>
       </footer>

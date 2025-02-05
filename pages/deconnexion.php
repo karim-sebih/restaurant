@@ -6,7 +6,7 @@ session_start();
 // Supprimer toutes les variables de session.
 $_SESSION = array();
 
-var_dump($_SESSION);
+
 
 // Si vous voulez détruire complètement la session, supprimez également
 // le cookie de session.
