@@ -1,0 +1,107 @@
+/* index */
+
+.main-card {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+.card-container {
+    width: 300px;
+    height: 350px;
+    border-radius: 10px;
+    background: #fafafa;
+    box-shadow: 10px 10px 30px #bebebe,
+        -10px -10px 30px #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #45c1df;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* inscription et connexion */
+.formulaire {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+.tittle {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container_card form {
+    width: 290px;
+    height: 300px;
+    border-radius: 10px;
+    background: #fafafa;
+    box-shadow: 10px 10px 30px #bebebe,
+        -10px -10px 30px #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3%;
+}
+
+.button {
+    width: 120px;
+    height: 30px;
+    background: #45c1df;
+    border-radius: 10px;
+    border: none;
+    margin-top: 5%;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.container_card2 form {
+    width: 290px;
+    height: 350px;
+    border-radius: 10px;
+    background: #fafafa;
+    box-shadow: 10px 10px 30px #bebebe,
+        -10px -10px 30px #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3%;
+}
+
+.button2 {
+
+    width: 120px;
+    height: 30px;
+    background: #45c1df;
+    border-radius: 10px;
+    margin-top: 5%;
+    border: none;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* Dashboard */
+
+
+
+
+
+/* footer */
