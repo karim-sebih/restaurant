@@ -1,4 +1,14 @@
 <?php
+session_start();
+
+if (!isset($_SESSION['user_id'])) {
+    header('Location: connexion.php');
+    exit;
+}
+
+?>
+
+<?php
 include("../utils/config2.php");
 
 // Activer l'affichage des erreurs PDO
